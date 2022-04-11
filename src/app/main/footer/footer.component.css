@@ -1,0 +1,158 @@
+footer{
+    padding-top:5.000em;
+    padding-bottom:3.125em;
+    padding-left: 2.500em;
+    padding-right:2.500em;
+}
+#logo{
+    margin-left: 0.625em;
+    margin-bottom:2.500em;
+}
+.icon{
+    margin-right:1.250em;
+}
+#location{
+    margin-bottom: 1.250em;
+}
+#location p:first-child{
+    padding-right: 3em;
+}
+#contact-info{
+    margin-bottom: 5.000em;
+}
+#phone-info{
+    margin-bottom: 1.250em;
+}
+#email-info{
+    margin-bottom: 1.250em;
+}
+.fylo-business-info-p{
+    font-size: 1.1em;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -5px;
+}
+#links-1,#links-2{
+    margin-bottom: 3.125em;
+}
+#links-1 li a:first-child,#links-2 li a:first-child{
+    line-height: 0;
+}
+.link-cont{
+    margin-bottom: 1.250em;
+}
+.link{
+    line-height: 100%;
+    padding-top:0;
+    margin-top:0;
+    font-size: 1.4em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.link:hover{
+    font-weight: 600;
+    cursor: pointer;
+    color:white;
+}
+.about-us-p{
+    font-size: 1.25em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0.938em;
+}
+#contact-us{
+    margin-bottom: 3.125em;
+}
+.contact-us-h1{
+    line-height: 100%;
+    padding-top:0;
+    margin-top:0;
+    font-size: 1.4em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.contact-us-p{
+    font-size: 1.25em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0.938em;
+}
+
+/* social icons */
+#socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons{
+    width: 15px; height:15px;
+    padding:0.500em;
+    border-radius: 1.563em;
+    border:1px solid white;
+    margin-right: 0.625em;
+}
+.social-icons:hover{
+    border: 1px solid hsl(176, 68%, 64%);
+    cursor: pointer;
+}
+.social-icons:hover .facebook{
+    cursor: pointer;
+    fill: aqua;
+}
+.social-icons .facebook{
+    fill: white;
+}
+.social-icons:hover .twitter{
+    cursor: pointer;
+    fill: aqua;
+}
+.social-icons .twitter{
+    fill: white;
+}
+.social-icons:hover .instagram{
+    cursor: pointer;
+    fill: aqua;
+}
+.social-icons .instagram{
+    fill: white;
+}
+
+
+@media (min-width: 992px) {
+    footer{
+        padding-top:200px;
+        padding-right: 7.500em;
+        padding-left: 7.500em;
+    }
+    #grid-footer{
+        display: grid;
+        grid-template-columns: 35% 25% 12.5% 12.5% 15%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "logo . . . ."
+            "location contactInfo links1 links2 socials";
+    }
+    #logo{
+        grid-area:logo;
+    }
+    #location{
+        grid-area:location;
+    }
+    #location p:first-child{
+        padding-right: 5em;
+    }
+    #contact-info{
+        grid-area:contactInfo;
+    }
+    #links-1{
+        grid-area:links1;
+    }
+    #links-2{
+        grid-area:links2;
+    }
+    #socials{
+        grid-area:socials;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+}

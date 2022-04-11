@@ -1,0 +1,59 @@
+section{
+    margin-bottom: 9.375em;
+}
+#illustation-intro{
+    width: 100%;
+}
+.intro-h1{
+    font-size: 1.75em;
+    line-height: 1.5em;
+}
+.intro-p{
+    font-weight: 400;
+    line-height: 1.5em;
+    padding-right: 0.625em;
+    padding-left: 0.625em;
+    margin-bottom: 2.500em;
+}
+button{
+    font-weight: 700;
+    background-color: hsl(198, 60%, 50%);
+    padding: 1.250em 6.250em;
+    border-radius: 3.125em;
+    background-image:
+    linear-gradient(
+      to right, 
+      hsl(176, 68%, 64%), hsl(198, 60%, 50%)
+    );
+}
+button:hover{
+    background-image: none;
+    background-color: hsl(188, 87%, 71%);
+}
+@media (min-width: 768px) {
+    .intro-h1{
+        font-size: 2.5em;
+    }
+    .intro-p{
+        font-size:1.1em;
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+}
+@media (min-width: 1200px) {
+    #illustation-intro{
+        width: 53.125em;
+        height:43.750em;
+    }
+    .intro-h1{
+        font-size: 3em;
+        padding-left:20%;
+        padding-right:20%;
+    }
+    .intro-p{
+        font-size:1.2em;
+        font-weight: 400;
+        padding-right: 30%;
+        padding-left: 30%;
+    }
+}

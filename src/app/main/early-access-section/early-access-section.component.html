@@ -1,0 +1,23 @@
+<!-- card get early access today -->
+<section class="early-access bg-color">
+    <div>
+        <h1 class="early-access-h1 font-white">Get early access today</h1>
+    </div>
+    <div>
+        <p class="early-access-p font-white">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+            questions, our support team would be happy to help you.</p>
+    </div>
+    <form (submit)="onEmailSubmit(emailForm)" #emailForm="ngForm">
+        <div class="form-group">
+            <div class="form-input">
+                <input ngModel name="email" placeholder="email@example.com" (ngModelChange)="emailOnChange()" required/>
+                <div class="input-error">
+                    <p *ngIf="emailNotValid">Please enter a valid email address</p>
+                </div>
+            </div>
+            <div class="form-button">
+                <button type="submit">Get Started For Free</button>
+            </div>
+        </div>
+    </form>
+</section>
