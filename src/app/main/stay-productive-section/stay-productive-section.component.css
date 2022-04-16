@@ -32,7 +32,7 @@ button:hover use:last-child{
     fill: white;
 }
 button:hover::before{
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 } 
 @media (min-width: 768px) {
     /* css grid used on tablet size or bigger */

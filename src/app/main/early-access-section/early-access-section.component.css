@@ -25,7 +25,8 @@ form{
     max-width: 25.000em;
 }
 .form-input{
-    margin-bottom:1.2em;
+    position: relative;
+    margin-bottom:.5em;
 }
 input{
     width: 100%;
